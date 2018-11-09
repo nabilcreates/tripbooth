@@ -13,8 +13,8 @@ function draw() {
     var x = 0;
     var y = 0;
     
-    var w = width/ 3;
-    var h = height/3;
+    var w = width/  2;
+    var h = height/ 2;
 
     // cnv.mousePressed(() => {
     // })
