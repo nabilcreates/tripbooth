@@ -12,8 +12,8 @@ function setup() {
 function draw() {
     var x = 0;
     var y = 0;
-    var w = 100;
-    var h = 100;
+    var w = width/5;
+    var h = height/5;
 
     // cnv.mousePressed(() => {
     // })
