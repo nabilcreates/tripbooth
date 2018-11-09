@@ -5,9 +5,8 @@ var snapshots = [];
 function setup() {
     cnv = createCanvas(window.innerWidth, window.innerHeight)
     video = createCapture(VIDEO)
-
+    video.hide()
     background(0)
-    video.size(50, 50)
 }
 
 function draw() {
@@ -17,8 +16,9 @@ function draw() {
     var h = 100;
 
     // cnv.mousePressed(() => {
-        takeSnapshot()
     // })
+
+    takeSnapshot()
 
     for (var i = 0; i < snapshots.length; i++) {
         image(snapshots[i], x, y, w, h)
