@@ -21,6 +21,7 @@ function draw() {
     takeSnapshot()
 
     for (var i = 0; i < snapshots.length; i++) {
+        // tint(random(100, 255), random(100, 255), random(100, 255))
         image(snapshots[i], x, y, w, h)
         x += w
 
@@ -39,6 +40,5 @@ function draw() {
 }
 
 function takeSnapshot() {
-    tint(random(100, 255), random(100, 255), random(100, 255))
     snapshots.push(video.get())
 }
